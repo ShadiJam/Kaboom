@@ -1,0 +1,19 @@
+<div class="new-library-form">
+
+
+<h5>Add your own library</h5>
+
+<%= render 'form', library: @library %>
+
+<%= link_to 'Back', libraries_path %>
+
+<br>
+
+<div class="import">
+<h5>Import a CSV File</h5>
+  <%= form_tag import_libraries_path, multipart: true do %>
+    <%= file_field_tag :file %>
+    <%= submit_tag "Import CSV" %>
+  <% end %>
+</div>
+</div>

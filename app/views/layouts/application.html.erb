@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kaboom</title>
+    <%= csrf_meta_tags %>
+    <%= yield :head %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">KABOOM</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><%= link_to 'New', new_library_path %></li>
+        <li><a href="#">Account</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+  <% if notice %>
+    <p class="notice"><%= notice %></p>
+  <% end %>
+  <% if alert %>
+    <p class="alert"><%= alert %></p>
+  <% end %>
+    <%= yield %>
+  </body>
+</html>

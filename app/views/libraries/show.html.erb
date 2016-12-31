@@ -1,0 +1,46 @@
+
+  <%= content_for :head do %>
+    <style>
+      body{
+        background: url('<%= @library.pic_url %>') center center;
+        top: 50%;
+        left: 50%;
+        width: 500px;
+        height: 500px;
+        margin-top: -250px;
+        margin-left: -250px;
+      }
+    </style>
+
+  <% end %>
+<p id="notice"><%= notice %></p>
+<div class="show-page">
+
+<p>
+  <strong>Name:</strong>
+  <%= @library.name %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @library.city %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @library.country %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @library.url %>
+</p>
+
+<p>
+  <strong>Image Url:</strong>
+  <%= @library.pic_url %>
+</p>
+
+<%= link_to '| Edit', edit_library_path(@library) %> |
+<%= link_to 'Back |', libraries_path %>
+</div>

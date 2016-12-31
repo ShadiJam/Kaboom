@@ -1,0 +1,40 @@
+<% if @library.present? %>
+<%= content_for :head do %>
+  <style>
+    body{
+      background: url('<%= @library.pic_url %>') center center;
+      top: 50%;
+      left: 50%;
+      width: 500px;
+      height: 500px;
+      margin-top: -250px;
+      margin-left: -250px;
+    }
+  </style>
+
+<% end %>
+
+<p id="notice"><%= notice %></p>
+
+  <div class="library-info">
+    <div class='title'>
+      <h3><a class="library_url"><span class="card-title"><%= link_to @library.name, @library.url %></span></a></h3>
+          <ul>
+              <h5><li><%= @library.city %>,</li></h5>
+              <h5><li><%= @library.country %></li></h5>
+          </ul>
+        </div>
+
+    <br>
+
+    <td><%= link_to '| Show |', @library %></td>
+    <td><%= link_to ' Edit |', edit_library_path(@library) %></td>
+    <td><%= link_to 'Destroy |', @library, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <p> Not interested in this library? Click below. </p>
+    <div class="mini-boom">
+      <h5><%= link_to '| KABOOM |', libraries_path %></h5>
+    </div>
+</div>
+
+
+<% end %>

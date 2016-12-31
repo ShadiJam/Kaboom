@@ -1,0 +1,23 @@
+<div class="edit-form">
+<h1>Editing Library</h1>
+
+<%= content_for :head do %>
+  <style>
+    body{
+      background: url('<%= @library.pic_url %>') center center;
+      top: 50%;
+      left: 50%;
+      width: 500px;
+      height: 500px;
+      margin-top: -250px;
+      margin-left: -250px;
+    }
+  </style>
+
+<% end %>
+
+<%= render 'form', library: @library %>
+
+<%= link_to '| Show', @library %> |
+<%= link_to 'Back |', libraries_path %>
+</div>

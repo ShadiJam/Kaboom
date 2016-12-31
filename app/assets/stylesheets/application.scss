@@ -1,0 +1,131 @@
+// Place all the styles related to the libraries controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "materialize/components/color";
+$primary-color: color("blue", "lighten-2") !default;
+$secondary-color: color("yellow", "base") !default;
+@import "materialize";
+
+html {
+  width:100%;
+  height:100%;
+}
+
+div.nav-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #E0CFB8;
+  width: 100%;
+}
+
+.info {
+  color: #70460C;
+  text-align: center;
+  margin-top: 525px;
+}
+.big-boom {
+  border-top: 5px solid #E0CFB8;
+  border-bottom: 5px solid #E0CFB8;
+  border-left: 5px solid #E0CFB8;
+  border-right: 5px solid #E0CFB8;
+  text-align: center;
+  width: 300px;
+  position: absolute;
+  z-index: 15;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -150px;
+}
+h1.big-kaboom a {
+  color: #E0CFB8;
+
+}
+
+img.img {
+  width: 800px;
+  position: absolute;
+  z-index: 15;
+  top: 25%;
+  left: 30%;
+  margin: -100px 0 0 -150px;
+
+}
+
+div.library-info a, div.library-info, div.mini-boom a {
+  color: black;
+  background-color: #E0CFB8;
+}
+
+div.edit-options h3, div.edit-options a, input#file {
+  color: black;
+  background-color: #E0CFB8;
+}
+
+div.edit-options input {
+  color: black;
+  background-color: #E0CFB8;
+  text-align: center;
+}
+
+div.library-info {
+  margin-left: 40px;
+  margin-top: 40px;
+  background-color: #E0CFB8;
+  text-align: center;
+  padding-bottom: 3px;
+}
+
+div.title h3 {
+  display: inline-block;
+  margin-left: 7px;
+}
+
+div.title {
+  text-align: center;
+}
+
+div.nav-wrapper {
+  width: 85rem;
+}
+
+div.field {
+  background-color: #E0CFB8;
+  width: 500px;
+}
+
+div.new-library-form {
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 10px;
+  background-color: #E0CFB8;
+  color: black;
+}
+
+div.new-library-form a {
+  color: black;
+}
+
+div.show-page {
+  width: 400px;
+  background-color: #E0CFB8;
+  margin-left: 40px;
+  margin-top: 40px;
+  text-align: center;
+  padding-bottom: 3px;
+}
+
+div.show-page a {
+  color: black;
+}
+
+div.edit-form {
+  background-color: #E0CFB8;
+  width: 500px;
+  margin-left: 40px;
+  color: black;
+  padding-left: 10px;
+}
+
+div.edit-form a {
+  color: black;
+}
