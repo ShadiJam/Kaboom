@@ -1,7 +1,7 @@
 
 #KABOOM!
 
-KABOOM! is a web based application that allows users to select among a pre-curated list of architecturally significant libraries from across the world to plan their own adventure.
+KABOOM is a web based application that allows users to select among a pre-curated list of architecturally significant libraries from across the world to plan their own adventure.
 
 ### Usage
 Once the user creates an account, they'll be able to curate trips based on their own interests. For example, they might want to create a list of hikes, diving spots, historical sites, etc and then use KABOOM! to help them plan their journey.
