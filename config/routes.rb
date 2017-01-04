@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'places_api/index'
+
   get 'home/index'
 
   root to: 'home#index'
